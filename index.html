@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="text.css" />
+    <meta charset="utf-8">
+    <title>My Web Page</title>
+    <script>
+      function myFunction(input) {
+         while (input >= 0) {
+           document.getElementsByTagName("img")[input].src = "http://media3.giphy.com/media/DbcEQQeM792uc/giphy.gif";
+           input--;
+         }
+      }
+      function myFunction2() {
+           document.getElementById("jumpingdolphin").src = "http://bestanimations.com/Animals/Mammals/Dolphins/dolphin/dolphin-jumping-animated-gif-4.gif";
+      }
+      function myFunction3() {
+           document.getElementById("jumpingdolphin").src = "https://i.pinimg.com/originals/b5/c1/f6/b5c1f6c39a365c578cc42be22159b263.jpg";
+      }
+    </script>
+  </head>
+  <body>
+      <h1>Hello!</h1>
+      <h2>Welcome to my website!</h2>
+      <h2>It's all about me!</h2>
+      <h3>My Favorites:</h3>
+      <h4>Food: Cookies</h4>
+      <p>Click on the cookie for a surprise</p>
+      <marquee>
+        <img src="https://lh6.ggpht.com/0O-HefMHNwemt4gnJ4YfNq3xFaTBaiFcwIRiUpzDZ1KObI8ptEMgoHOSDiy_tumRWexz=w300" onclick="myFunction(2)"/>
+        <img src="" />
+        <img src="" />
+      </marquee>
+      <h4>Song: Raag Bageshri</h4>
+      <iframe width="620" height="590" src="https://www.youtube.com/embed/lFIF4Safl4A"></iframe>
+      <h4>Animal: Dolphin</h4>
+        <img src="https://i.pinimg.com/originals/b5/c1/f6/b5c1f6c39a365c578cc42be22159b263.jpg" id="jumpingdolphin" onmouseover="myFunction2()" onmouseout="myFunction3()"/>
+      <h4>Color: Dark Cyan</h4>
+      <p style="color: darkcyan"><strong>This is my favorite color.</strong></p>
+  </body>
+</html>
